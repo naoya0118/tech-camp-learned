@@ -50,13 +50,15 @@
 <p>同じような年齢の、同じような志と、同じように夢を持ち、同じように努力し自分に投資ができる</p>
 <p>最高の仲間達が、一緒に笑い、励まし合い、助け合えた。この経験はプログラミングを学ぶ以上の価値がありました。</p>
 <p>Special Thanks 94.team A </p>
-
+</div>
+<div class="contents row">
   <% @reports.each do |report| %>
     <div class="content_post" style="background-image: url(<%= report.image %>);">
-      <p><%= report.text %></p>
+      <p><%= report.title %></p>
       <span class="name">
-        <%= report.name %>
+        <%= report.report %>
       </span>
     </div>
-  <% end %>
+    <% end %>
+</div>
 </div>
