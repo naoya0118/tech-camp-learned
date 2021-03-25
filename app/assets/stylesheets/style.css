@@ -1064,4 +1064,16 @@ footer p {
 .content {
   text-align: center;
   padding:15px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size:10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   }
+
+.content-net{
+  font-size:13px;
+  color: #57C3E9;
+}
