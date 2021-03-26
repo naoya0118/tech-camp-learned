@@ -1,5 +1,6 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: [:edit, :show]
+  before_action :move_to_index, except: [:index, :show]
 
   def index
     @reports = Report.all
@@ -38,4 +39,11 @@ class ReportsController < ApplicationController
   def set_report
     @report = Report.find(params[:id])
   end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
+  end
+  
 end
